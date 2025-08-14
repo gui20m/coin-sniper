@@ -9,22 +9,23 @@ from matplotlib.dates import DateFormatter
 from matplotlib.patches import Rectangle
 import mysql.connector
 import io
+import os
 from PIL import Image, ImageChops
 
-WEBHOOK_URL1 = "https://discord.com/api/webhooks/1405326694331584675/PrJd9JOCa3MFL9Se4-b45akl5FltHBz84u2BOQY_FAM1swpuzU1pAD04Zp7upvJ6CoLj"
-WEBHOOK_URL2 = "https://discord.com/api/webhooks/1405326799197569208/WZjEIGI3_ZB16xUdM248GNhycd37KIZlnHzpxCYGmpJLbTrgCYWKJEISKL2wbDbXxz47"
-WEBHOOK_URL3 = "https://discord.com/api/webhooks/1405326928847704084/jZ6SSUBuYRxgg6E2P-QKehLX5I6vXGg9cP_QnUUKn3xnz3xfYew2E1KGtqjoWMeIn4eS"
-WEBHOOK_SHITTY = "https://discord.com/api/webhooks/1405320769478725812/923wagmJ0lpHPLmbettrPk5SZa2AEnSDlBPXoBFfmQCf3ye-m8Tpy2uEErqbDtZDUM1h"
+WEBHOOK_URL1 = os.getenv("API_1")
+WEBHOOK_URL2 = os.getenv("API_2")
+WEBHOOK_URL3 = os.getenv("API_3")
+WEBHOOK_SHITTY = os.getenv("API_4")
 
 url = f"https://data.solanatracker.io/"
 headers = {
-    "x-api-key": "aea2e858-9e73-4074-b39f-2a32c8a3d5d5"
+    "x-api-key": os.getenv("API_5")
 }
 
 config = {
     'host': 'localhost',
     'user': 'root',
-    'password': 'guilherme12',
+    'password': os.getenv("PASSW"),
     'database': 'coin-snipper'
 }
 
