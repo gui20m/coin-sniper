@@ -1,0 +1,16 @@
+[project]
+name = "repl-nix-workspace"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.12"
+dependencies = [
+    "boto3>=1.40.9",
+    "matplotlib>=3.10.5",
+    "mysql-connector-python>=9.4.0",
+    "numpy>=2.3.2",
+    "opencv-python>=4.11.0.86",
+    "pandas>=2.3.1",
+    "pillow==11.0.0",
+    "requests>=2.32.4",
+    "scikit-image>=0.25.2",
+]

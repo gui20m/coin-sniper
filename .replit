@@ -1,0 +1,5 @@
+modules = ["python-3.12"]
+
+[nix]
+channel = "stable-25_05"
+packages = ["cairo", "ffmpeg-full", "freetype", "ghostscript", "glibcLocales", "gobject-introspection", "gtk3", "lcms2", "libGL", "libGLU", "libimagequant", "libjpeg", "libtiff", "libwebp", "libxcrypt", "openjpeg", "pkg-config", "python312Packages.scikit-image", "python313Packages.boto3", "python313Packages.opencv-python", "qhull", "tcl", "tk", "zlib"]
